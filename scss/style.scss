@@ -119,7 +119,7 @@ html,body {
     }
 }
 
-//----------------------------------------------------------------------- s
+//----------------------------------------------------------------------- lorem
 
 .lorem {
 
@@ -131,6 +131,107 @@ html,body {
         color: #000;
         font-size: 15px;
         letter-spacing: 0.5px; 
+        line-height: 16px;
         text-align: justify; 
+
+    }
+}
+
+//----------------------------------------------------------------------- popup 
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(110, 156, 159, 0.95);
+    z-index: 10;
+
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease 0s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target .popup__content {
+        opacity: 1;
+        //transform: translate(0px, 0px);
+        transform: perspective(500px) translate(0px, 0%) rotateX(0deg);
+    }
+
+    &__body {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    &__content {
+        width: 490px;
+        height: 100%;
+        padding: 70px;
+        background: #FFF;
+        position: relative; // for .popup__close
+        
+        opacity: 0;
+        //transform: translate(0px, -100%); 
+        transform: perspective(500px) translate(0px, -100%) rotateX(45deg);
+        transition: all 0.3s ease 0s;
+    }
+
+    &__close {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0.5px;
+    }
+
+    &__form {
+        margin-top: 35px;
+    }
+
+    &__input {
+        height: 40px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 35px;
+
+        input {
+            width: 350px;
+            color: #868686;
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: 0.34px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            width: 100%;
+            height: 68px;
+            background-color: var(--cta, #6E9C9F);
+
+            color: #FFF;
+            text-align: center;
+            font-size: 17px;
+            letter-spacing: 0.34px;
+        }
     }
 }

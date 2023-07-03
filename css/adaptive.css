@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -99,7 +99,7 @@
     display: block;
     position: fixed;
     width: 100%;
-    height: 304px;
+    height: 310px;
     top: -100%;
     left: 0;
     z-index: 1;
@@ -120,7 +120,7 @@
   .header__link {
     position: relative;
     width: 70px;
-    margin: 0px auto 24px;
+    margin: 0px auto 25px;
   }
   .header__link:last-child {
     margin-bottom: 0px;
@@ -139,7 +139,7 @@
     position: absolute;
     width: 5px;
     height: 5px;
-    top: 28px;
+    top: 27px;
     left: 32.5px;
     border-radius: 50%;
     background-color: #6E9C9F;
@@ -159,7 +159,7 @@
   }
   .header__basket {
     margin-left: 0px;
-    margin-right: 48px;
+    margin-right: 50px;
     position: relative;
     z-index: 3;
   }
@@ -174,5 +174,85 @@
     font-size: 15px;
     letter-spacing: 0.5px;
     text-align: justify;
+  }
+  .popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(110, 156, 159, 0.95);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease 0s;
+  }
+  .popup:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: perspective(500px) translate(0px, 0%) rotateX(0deg);
+  }
+  .popup__body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+  }
+  .popup__content {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: #FFF;
+    position: relative;
+    opacity: 0;
+    transform: perspective(500px) translate(0px, -100%) rotateX(45deg);
+    transition: all 0.3s ease 0s;
+  }
+  .popup__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .popup__title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+  }
+  .popup__form {
+    margin-top: 25px;
+  }
+  .popup__input {
+    height: 30px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 25px;
+  }
+  .popup__input input {
+    width: 240px;
+    color: #868686;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.34px;
+  }
+  .popup__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup__button button {
+    width: 100%;
+    height: 60px;
+    background-color: var(--cta, #6E9C9F);
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.34px;
   }
 }

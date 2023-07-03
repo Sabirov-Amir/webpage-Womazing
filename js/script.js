@@ -12,6 +12,6 @@ if (headerBurger) {
     });
 }
 
-// * document.body.classList.toggle('lock') // в css в body пишем overflow: hidden;
+// * document.body.classList.toggle('lock') // в css в body пишем overflow: hidden; // не хватает кода для smooth-scroll
 
 //-----------------------------------------------------------------------------------------------------------------------------------------

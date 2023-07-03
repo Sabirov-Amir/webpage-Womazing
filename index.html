@@ -42,8 +42,8 @@
                             <a href="#">Контакты</a>
                         </div>
                     </div>
-                    <div class="header__call">
-                        <img src="img/logo/header-call.svg" alt="">
+                    <div class="header__call popup-link">
+                        <a href="#popup"><img src="img/logo/header-call.svg" alt=""></a>
                     </div>
                     <div class="header__number">
                         +7 (495) 823-54-12
@@ -68,9 +68,34 @@
         </div>
     </div>
 
-    <!--------------------------------------------------->
+    <!---------------------------------------------------> 
 
-
+    <div class="popup" id="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="##" class="popup__close">
+                    <img src="img/popup/popup-close.svg">
+                </a>
+                <div class="popup__title">
+                    Заказать обратный звонок
+                </div>
+                <form class="popup__form" action="#" method="get">
+                    <div class="popup__input">
+                        <input type="name" placeholder="Имя">
+                    </div>	
+                    <div class="popup__input">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="popup__input">
+                        <input type="tel" placeholder="Телефон">
+                    </div>
+                    <div class="popup__button">
+                        <button type="submit">Заказать звонок</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!--------------------------------------------------->
 

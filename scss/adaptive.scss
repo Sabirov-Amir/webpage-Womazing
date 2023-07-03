@@ -1,7 +1,7 @@
 
 // --------------------------------------------------------------------------------- 576 (responsive markup)
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .container {
         width: 100%;
         margin: 0 auto;
@@ -118,7 +118,7 @@
             display: block; // убираю flex
             position: fixed;
             width: 100%;
-            height: 304px; 
+            height: 310px; 
             top: -100%;
             left: 0;
 
@@ -144,7 +144,7 @@
         &__link {
             position: relative;
             width: 70px;
-            margin: 0px auto 24px;
+            margin: 0px auto 25px;
 
             &:last-child {
                 margin-bottom: 0px;
@@ -168,7 +168,7 @@
                 position: absolute;
                 width: 5px;
                 height: 5px;
-                top: 28px;
+                top: 27px;
                 left: 32.5px;
                 border-radius: 50%;
                 background-color: #6E9C9F;
@@ -192,7 +192,7 @@
     
         &__basket {
             margin-left: 0px;
-            margin-right: 48px;
+            margin-right: 50px;
             position: relative;
             z-index: 3;
             img {
@@ -214,6 +214,105 @@
             font-size: 15px;
             letter-spacing: 0.5px; 
             text-align: justify; 
+        }
+    }
+
+    // ---------------------------------- popup 576 - done
+
+    .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(110, 156, 159, 0.95);
+        z-index: 10;
+
+        opacity: 0;
+        visibility: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: all 0.3s ease 0s;
+
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:target .popup__content {
+            opacity: 1;
+            //transform: translate(0px, 0px);
+            transform: perspective(500px) translate(0px, 0%) rotateX(0deg);
+        }
+
+        &__body {
+            min-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+        &__content {
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            background: #FFF;
+            position: relative; // for .popup__close
+            
+            opacity: 0;
+            //transform: translate(0px, -100%); 
+            transform: perspective(500px) translate(0px, -100%) rotateX(45deg);
+            transition: all 0.3s ease 0s;
+        }
+
+        &__close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.5px;
+        }
+
+        &__form {
+            margin-top: 25px;
+        }
+
+        &__input {
+            height: 30px;
+            border-bottom: 1px solid #000;
+            margin-bottom: 25px;
+
+            input {
+                width: 240px;
+                color: #868686;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0.34px;
+            }
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                width: 100%;
+                height: 60px;
+                background-color: var(--cta, #6E9C9F);
+
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                letter-spacing: 0.34px;
+            }
         }
     }
 
