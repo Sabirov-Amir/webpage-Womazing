@@ -125,7 +125,7 @@
             z-index: 1;
 
             background-color: #F1EADC;
-            padding: 86px 0px 0px 0px;
+            padding: 84px 0px 0px 0px;
             text-align: center;
             transition-duration: 300ms;
             transition-timing-function: ease-out;
@@ -168,7 +168,7 @@
                 position: absolute;
                 width: 5px;
                 height: 5px;
-                top: 27px;
+                top: 28px;
                 left: 32.5px;
                 border-radius: 50%;
                 background-color: #6E9C9F;
@@ -234,12 +234,12 @@
         overflow-x: hidden;
         transition: all 0.3s ease 0s;
 
-        &:target {
+        &.open {
             opacity: 1;
             visibility: visible;
         }
 
-        &:target .popup__content {
+        &.open .popup__content {
             opacity: 1;
             //transform: translate(0px, 0px);
             transform: perspective(500px) translate(0px, 0%) rotateX(0deg);
@@ -290,7 +290,7 @@
             margin-bottom: 25px;
 
             input {
-                width: 240px;
+                width: 100%;
                 color: #868686;
                 font-size: 14px;
                 font-weight: 500;

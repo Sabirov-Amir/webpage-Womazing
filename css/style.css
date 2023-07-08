@@ -73,10 +73,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------ обнуляющий список ----------------------*/
 html, body {
-  height: 100%;
+  min-height: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #000;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
 }
 
 .container {
@@ -190,11 +199,11 @@ html, body {
   overflow-x: hidden;
   transition: all 0.3s ease 0s;
 }
-.popup:target {
+.popup.open {
   opacity: 1;
   visibility: visible;
 }
-.popup:target .popup__content {
+.popup.open .popup__content {
   opacity: 1;
   transform: perspective(500px) translate(0px, 0%) rotateX(0deg);
 }
