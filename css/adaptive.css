@@ -45,6 +45,7 @@
     width: 22px;
   }
   .header__text {
+    color: #000;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -167,7 +168,7 @@
     width: 22px;
   }
   .lorem__wrap {
-    padding-top: 80px;
+    padding-top: 72px;
   }
   .lorem__text {
     color: #000;
@@ -241,12 +242,10 @@
     font-weight: 500;
     letter-spacing: 0.34px;
   }
-  .popup__button {
+  .popup__button button {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .popup__button button {
     width: 100%;
     height: 60px;
     background-color: var(--cta, #6E9C9F);
@@ -255,4 +254,20 @@
     font-size: 14px;
     letter-spacing: 0.34px;
   }
+}
+.popup__button_2 {
+  display: block;
+  width: 160px;
+  margin: 20px auto 0px;
+}
+.popup__button_2 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 56px;
+  background: #FFF;
+  border: 1px solid #6E9C9F;
+  color: #6E9C9F;
+  line-height: 138.9%;
 }

@@ -129,6 +129,7 @@ body.lock {
   z-index: 3;
 }
 .header__text {
+  color: #000;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1.6px;
@@ -215,8 +216,6 @@ body.lock {
   padding: 30px 15px;
 }
 .popup__content {
-  width: 490px;
-  height: 100%;
   padding: 70px;
   background: #FFF;
   position: relative;
@@ -251,17 +250,32 @@ body.lock {
   font-weight: 500;
   letter-spacing: 0.34px;
 }
-.popup__button {
+.popup__button button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.popup__button button {
   width: 100%;
   height: 68px;
-  background-color: var(--cta, #6E9C9F);
+  background-color: #6E9C9F;
   color: #FFF;
   text-align: center;
   font-size: 17px;
   letter-spacing: 0.34px;
+}
+
+.popup__button_2 {
+  display: block;
+  width: 168px;
+  margin: 35px auto 0px;
+}
+.popup__button_2 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 68px;
+  background: #FFF;
+  border: 1px solid #6E9C9F;
+  color: #6E9C9F;
+  line-height: 138.9%;
 }

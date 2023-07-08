@@ -12,6 +12,7 @@
 <body>
     
     <div class="wrapper">
+
         <!--------------------------------------------------->
 
         <header class="header lock-padding">
@@ -21,9 +22,9 @@
                         <div class="header__icon">
                             <img src="img/logo/header-icon.svg" alt="">
                         </div>
-                        <div class="header__text">
+                        <a data-goto=".lorem" class="header__text navigation" href="##">
                             Womazing
-                        </div>
+                        </a>
                     </div>
                     <div class="header__burger">
                         <span></span>
@@ -31,7 +32,7 @@
                     <div class="header__menu">
                         <div class="header__navigation">
                             <div class="header__link header__link_color">
-                                <a href="##">Главная</a>
+                                <a data-goto=".lorem" class="navigation" href="##">Главная</a>
                             </div>
                             <div class="header__link">
                                 <a href="##">Магазин</a>
@@ -90,15 +91,29 @@
                         <div class="popup__input">
                             <input type="tel" placeholder="Телефон">
                         </div>
-                        <div class="popup__button close-popup">
+                        <a href="#popup-2" class="popup__button popup-link">
                             <button type="submit">Заказать звонок</button>
-                        </div>
+                        </a>
                     </form>
+                </div>
+            </div>
+        </div>
+        <!----------------------------->
+        <div class="popup" id="popup-2">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__title">
+                        Отлично! Мы скоро вам перезвоним.
+                    </div>
+                    <a href="#popup-2" class="popup__button_2 close-popup">
+                        <button type="submit">Закрыть</button>
+                    </a>
                 </div>
             </div>
         </div>
 
         <!--------------------------------------------------->
+
     </div>
 
     <script src="js/script.js"></script>
