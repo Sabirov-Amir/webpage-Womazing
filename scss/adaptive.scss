@@ -177,7 +177,8 @@
         }
     
         &__call {
-            margin: 0px 0px 0px 0px;
+            //width: 27px;
+            margin: 0px auto 0px;
             transform: translateY(45px);
         }
     
@@ -192,12 +193,13 @@
         }
     
         &__basket {
-            margin-left: 0px;
+            transform: translateX(-2px); // Обнуляю у adaptive.scss
+            margin-left: 0px; // Обнуляю у adaptive.scss
             margin-right: 50px;
             position: relative;
             z-index: 3;
             img {
-                width: 22px;
+                width: 24px;
             }
         }
     }

@@ -146,7 +146,7 @@
     background-color: #6E9C9F;
   }
   .header__call {
-    margin: 0px 0px 0px 0px;
+    margin: 0px auto 0px;
     transform: translateY(45px);
   }
   .header__number {
@@ -159,13 +159,14 @@
     transform: translateY(-5px);
   }
   .header__basket {
+    transform: translateX(-2px);
     margin-left: 0px;
     margin-right: 50px;
     position: relative;
     z-index: 3;
   }
   .header__basket img {
-    width: 22px;
+    width: 24px;
   }
   .lorem__wrap {
     padding-top: 72px;

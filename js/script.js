@@ -29,7 +29,6 @@ if (pageNavigation.length > 0) {
         }
     }
 }
-
 // * Closing menu when click on link (inside menu) - 3 strings after 'if' took from 'Menu burger on JavaScript'
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
@@ -37,8 +36,6 @@ if (pageNavigation.length > 0) {
 // Menu burger on JavaScript
 const headerBurger = document.querySelector('.header__burger');
 const headerMenu = document.querySelector('.header__menu');
-const headerCall = document.querySelector('.header__call');
-
 if (headerBurger) {
     headerBurger.addEventListener("click", function(e) {
         document.body.classList.toggle('lock') // Prohibit scroll if menu is open* 
@@ -46,9 +43,10 @@ if (headerBurger) {
         headerMenu.classList.toggle('active');
     });
 }
-// * document.body.classList.toggle('lock') // in css for body.lock write 'overflow: hidden'
+// * In css for body.lock need write 'overflow: hidden'
 
 // При клике на иконку, вызывающую popup, закрывается меню бургер + лочится скролл благодаря коду в popup.js
+const headerCall = document.querySelector('.header__call'); 
 if (headerCall) {
     headerCall.addEventListener("click", function(e) {
         headerBurger.classList.remove('active');
@@ -56,4 +54,21 @@ if (headerCall) {
     });
 }
 
+// При клике на контент(.lorem) закрывается меню бургер
+const lorem = document.querySelector('.lorem');
+if (lorem) {
+    lorem.addEventListener("click", function(e) {
+        document.body.classList.remove('lock')
+        headerBurger.classList.remove('active');
+        headerMenu.classList.remove('active');
+    });
+} 
+
 //-----------------------------------------------------------------------------------------------------------------------------------------
+
+// Вывод блоков при клике
+const headerMenuActive = document.querySelector('.header__menu.active');
+document.addEventListener('click', (e) => {
+       const click = e.composedPath();
+       console.log(click);
+})
