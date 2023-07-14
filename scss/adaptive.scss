@@ -204,12 +204,173 @@
         }
     }
 
+    // ---------------------------------- about 576 - done
+
+    .about {
+        margin-top: 60px;
+    
+        &__wrap {
+            height: 880px;
+            min-width: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        &__block-one {
+            width: 100%;
+        }
+    
+        &__slider-text {
+            margin-top: 25px;
+        }
+    
+        &__wrap-text {
+        }
+    
+        &__slide-text {
+        }
+    
+        &__title-text {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 1.1px;
+            text-align: center;
+        }
+    
+        &__subtitle-text {
+            width: 100%;
+            margin: 25px 0px 0px 0px;
+            text-align: right;
+            font-size: 14px;
+            line-height: 140%;
+            letter-spacing: 0.4px;
+            text-align: center;
+        }
+    
+        &__navigation {
+            display: flex;
+            margin: 25px auto 0px;
+            width: 260px;
+        }
+    
+        &__arrow {
+            img {
+                width: 50px;
+            }
+        }
+    
+        &__button {
+        }
+    
+        &__block-two {
+            margin-top: 50px;
+            width: 100%;
+            height: 100%;
+            background: #F1EADC;
+            position: relative; // for .about__image-up/down
+            
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+    
+        &__slider-image {
+        }
+    
+        &__wrap-image {
+        }
+    
+        &__slide-image {
+        }
+    
+        &__image {
+            img {
+                width: 100%;
+                max-height: 430px;
+                object-fit: cover;
+            }
+        }
+    
+        &__image-up {
+            position: absolute;
+            top: 90px;
+            right: -70px;
+            z-index: 1;
+            img {
+                width: 150px;
+                object-fit: cover;
+                //border-radius: 5px;
+            }
+        }
+    
+        &__image-down {
+            position: absolute;
+            bottom: 30px;
+            left: -60px;
+            z-index: 1;
+            img {
+                max-width: 140px;
+                min-height: 180px;
+                object-fit: cover;
+                //border-radius: 5px;
+            }
+        }
+    }
+    
+    .button {
+        a {
+            width: 210px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            line-height: 138.9%;
+            letter-spacing: 0.34px;
+            background: #6E9C9F;
+        }
+    }
+    
+    .about__block-one .swiper-pagination {
+        position: inherit; // убрал position:absolute у стиля swiper
+        bottom: 0; // обнуляю bottom: -8px; у стиля swiper
+        margin: 30px auto 0px;
+        width: 114px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        &-bullet {
+            border-radius: 0px;
+            width: 26px;
+            height: 4px;
+            margin: 0px;
+    
+            &-active {
+                background-color: #000;
+            }
+    
+            &-horizontal-gap {
+                margin: 0;
+            }
+        }
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullet {
+        margin: 0;
+    }
+
     // ---------------------------------- lorem 576 - done
 
     .lorem {
+        margin-top: 50px;
 
         &__wrap {
-            padding-top: 72px;
         }
     
         &__text {
@@ -317,27 +478,30 @@
             }
         }
     }
-}
 
-//--------------------------------- popup-2
+    //--------------------------------- popup-2
 
-.popup {
+    .popup {
 
-    &__button_2 {
-        display: block;
-        width: 160px;
-        margin: 20px auto 0px;
-        button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        &__button_2 {
+            display: block;
             width: 160px;
-            height: 56px;
-            background: #FFF;
-            border: 1px solid #6E9C9F;
-
-            color: #6E9C9F;
-            line-height: 138.9%;
+            margin: 20px auto 0px;
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 160px;
+                height: 56px;
+                background: #FFF;
+                border: 1px solid #6E9C9F;
+    
+                color: #6E9C9F;
+                line-height: 138.9%;
+            }
         }
     }
 }
+
+
+

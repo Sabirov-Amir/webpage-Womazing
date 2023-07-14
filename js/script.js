@@ -55,9 +55,9 @@ if (headerCall) {
 }
 
 // При клике на контент(.lorem) закрывается меню бургер
-const lorem = document.querySelector('.lorem');
-if (lorem) {
-    lorem.addEventListener("click", function(e) {
+const closeMenu = document.querySelector('.close-menu');
+if (closeMenu) {
+    closeMenu.addEventListener("click", function(e) {
         document.body.classList.remove('lock')
         headerBurger.classList.remove('active');
         headerMenu.classList.remove('active');
@@ -66,7 +66,7 @@ if (lorem) {
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
 
-// Вывод блоков при клике
+// Show which blocks when click 
 const headerMenuActive = document.querySelector('.header__menu.active');
 document.addEventListener('click', (e) => {
        const click = e.composedPath();

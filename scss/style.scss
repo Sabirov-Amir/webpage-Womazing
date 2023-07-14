@@ -131,12 +131,148 @@ body.lock {
     }
 }
 
+//----------------------------------------------------------------------- about
+
+.about {
+    margin-top: 134px;
+
+    &__wrap {
+        height: 692px;
+        min-width: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block-one {
+        width: 554px;
+    }
+
+    &__slider-text {
+        margin-top: 131px;
+    }
+
+    &__wrap-text {
+    }
+
+    &__slide-text {
+    }
+
+    &__title-text {
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 1.1px;
+    }
+
+    &__subtitle-text {
+        width: 385px;
+        margin: 45px 0px 0px 15px;
+        text-align: right;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.4px;
+    }
+
+    &__navigation {
+        display: flex;
+        margin: 52px 0px 0px 90px;
+    }
+
+    &__arrow {
+    }
+
+    &__button {
+    }
+
+    &__block-two {
+        width: 460px;
+        background: #F1EADC;
+        position: relative; // for .about__image-up/down
+        
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    &__slider-image {
+    }
+
+    &__wrap-image {
+    }
+
+    &__slide-image {
+    }
+
+    &__image {
+    }
+
+    &__image-up {
+        position: absolute;
+        top: 109px;
+        right: -116px;
+        z-index: 1;
+    }
+
+    &__image-down {
+        position: absolute;
+        bottom: 0;
+        left: -80px;
+        z-index: 1;
+    }
+}
+
+.button {
+    a {
+        width: 243px;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        color: #FFF;
+        text-align: center;
+        font-size: 17px;
+        line-height: 138.9%;
+        letter-spacing: 0.34px;
+        background: #6E9C9F;
+    }
+}
+
+.about__block-one .swiper-pagination {
+    position: inherit; // убрал position:absolute у стиля swiper
+    bottom: 0; // обнуляю bottom: -8px; у стиля swiper
+    margin: 81px 0px 0px 290px ; // 286px(вместо 290) когда уберу margin: 4px
+    width: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-bullet {
+        border-radius: 0px;
+        width: 30px;
+        height: 4px;
+        margin: 0px;
+
+        &-active {
+            background-color: #000;
+        }
+
+        &-horizontal-gap {
+            margin: 0;
+        }
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullet {
+    margin: 0;
+}
+
 //----------------------------------------------------------------------- lorem
 
 .lorem {
+    margin-top: 50px;
 
     &__wrap {
-        padding-top: 110px;
     }
 
     &__text {
@@ -145,7 +281,6 @@ body.lock {
         letter-spacing: 0.5px; 
         line-height: 16px;
         text-align: justify; 
-
     }
 }
 
@@ -186,8 +321,6 @@ body.lock {
     }
 
     &__content {
-        //width: 490px;
-        //height: 100%;
         padding: 70px;
         background: #FFF;
         position: relative; // for .popup__close
