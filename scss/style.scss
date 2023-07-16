@@ -67,15 +67,31 @@ body.lock {
     }
 
     &__icon {
+        a {
+            width: 25px;
+            height: 25px;
+            display: block;
+            background-image: url(/img/logo/header-icon.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 25px 25px;
+        }
     }
 
     &__text {
+        width: 115px;
+        height: 25px;
+        
         color: #000;
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 1.6px;
         text-transform: uppercase;
-        margin: 2px 0px 0px 11px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 3px;
     }
 
     &__burger {
@@ -101,6 +117,9 @@ body.lock {
             color: #000;
             font-size: 15px;
             letter-spacing: 0.3px;
+            // &:hover {
+            //     text-decoration: underline;
+            // }
         }
 
         &_color {
@@ -114,6 +133,16 @@ body.lock {
     &__call {
         width: 27px;
         margin: 3px 0px 0px 166px;
+        &:hover {
+            img {
+                opacity: 0;
+            }
+            background: #6E9C9F;
+            background-image: url(/img/logo/header-call-hover.svg);
+            background-repeat: no-repeat;
+            background-position: 60% 34%;
+            background-size: 17px;
+        }
     }
 
     &__number {
@@ -134,10 +163,11 @@ body.lock {
 //----------------------------------------------------------------------- about
 
 .about {
-    margin-top: 134px;
+    margin-top: 96px;
 
     &__wrap {
-        height: 692px;
+        padding-top: 40px;
+        height: 732px; // height: 692px + padding-top: 40; 
         min-width: 0px;
         display: flex;
         justify-content: space-between;
@@ -179,9 +209,22 @@ body.lock {
     }
 
     &__arrow {
+        a {
+            width: 68px;
+            height: 68px;
+            display: block;
+            background-image: url(/img/elements/arrow-down.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 68px 68px;
+        }
     }
 
     &__button {
+        background: #6E9C9F;
+        &:hover {
+            background-color: #509498;
+        }
     }
 
     &__block-two {
@@ -222,6 +265,7 @@ body.lock {
 }
 
 .button {
+    width: 243px;
     a {
         width: 243px;
         height: 68px;
@@ -234,7 +278,6 @@ body.lock {
         font-size: 17px;
         line-height: 138.9%;
         letter-spacing: 0.34px;
-        background: #6E9C9F;
     }
 }
 
@@ -265,6 +308,77 @@ body.lock {
 
 .swiper-horizontal>.swiper-pagination-bullet {
     margin: 0;
+}
+
+//----------------------------------------------------------------------- collection
+
+.collection {
+
+    &__wrap {
+        padding-top: 30px;
+        height: 857px; // height: 827px + padding-top: 30; 
+        margin-top: 100px;
+    }
+
+    &__header {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+    }
+
+    &__column {
+        margin-top: 92px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+    }
+
+    &__image { 
+    }
+
+    &__subimage {
+        text-align: center;
+    }
+
+    &__thing {
+        margin-top: 24px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+
+    &__price {
+        margin-top: 7px;
+        color: #998E78;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.3px;
+
+        span {
+            color: #9C9C9C;
+            text-decoration: line-through;
+        }
+    }
+
+    &__button {
+        margin: 65px auto 0px;
+        a {
+            color: #6E9C9F; 
+            border: 1px solid #6E9C9F;
+        }
+        &:hover {
+            background-color: #6E9C9F;
+            a {
+                color: #FFF;
+            }
+        }
+    }
 }
 
 //----------------------------------------------------------------------- lorem

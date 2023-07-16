@@ -128,13 +128,27 @@ body.lock {
   position: relative;
   z-index: 3;
 }
+.header__icon a {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-image: url(/img/logo/header-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 25px 25px;
+}
 .header__text {
+  width: 115px;
+  height: 25px;
   color: #000;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1.6px;
   text-transform: uppercase;
-  margin: 2px 0px 0px 11px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 3px;
 }
 .header__burger {
   display: none;
@@ -164,6 +178,16 @@ body.lock {
   width: 27px;
   margin: 3px 0px 0px 166px;
 }
+.header__call:hover {
+  background: #6E9C9F;
+  background-image: url(/img/logo/header-call-hover.svg);
+  background-repeat: no-repeat;
+  background-position: 60% 34%;
+  background-size: 17px;
+}
+.header__call:hover img {
+  opacity: 0;
+}
 .header__number {
   color: #000;
   font-size: 15px;
@@ -178,10 +202,11 @@ body.lock {
 }
 
 .about {
-  margin-top: 134px;
+  margin-top: 96px;
 }
 .about__wrap {
-  height: 692px;
+  padding-top: 40px;
+  height: 732px;
   min-width: 0px;
   display: flex;
   justify-content: space-between;
@@ -210,6 +235,21 @@ body.lock {
   display: flex;
   margin: 52px 0px 0px 90px;
 }
+.about__arrow a {
+  width: 68px;
+  height: 68px;
+  display: block;
+  background-image: url(/img/elements/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 68px 68px;
+}
+.about__button {
+  background: #6E9C9F;
+}
+.about__button:hover {
+  background-color: #509498;
+}
 .about__block-two {
   width: 460px;
   background: #F1EADC;
@@ -231,6 +271,9 @@ body.lock {
   z-index: 1;
 }
 
+.button {
+  width: 243px;
+}
 .button a {
   width: 243px;
   height: 68px;
@@ -242,7 +285,6 @@ body.lock {
   font-size: 17px;
   line-height: 138.9%;
   letter-spacing: 0.34px;
-  background: #6E9C9F;
 }
 
 .about__block-one .swiper-pagination {
@@ -269,6 +311,59 @@ body.lock {
 
 .swiper-horizontal > .swiper-pagination-bullet {
   margin: 0;
+}
+
+.collection__wrap {
+  padding-top: 30px;
+  height: 857px;
+  margin-top: 100px;
+}
+.collection__header {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0.8px;
+}
+.collection__column {
+  margin-top: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection__subimage {
+  text-align: center;
+}
+.collection__thing {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+}
+.collection__price {
+  margin-top: 7px;
+  color: #998E78;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+}
+.collection__price span {
+  color: #9C9C9C;
+  text-decoration: line-through;
+}
+.collection__button {
+  margin: 65px auto 0px;
+}
+.collection__button a {
+  color: #6E9C9F;
+  border: 1px solid #6E9C9F;
+}
+.collection__button:hover {
+  background-color: #6E9C9F;
+}
+.collection__button:hover a {
+  color: #FFF;
 }
 
 .lorem {

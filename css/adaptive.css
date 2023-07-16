@@ -41,16 +41,27 @@
     position: relative;
     z-index: 3;
   }
-  .header__icon img {
+  .header__icon a {
     width: 22px;
+    height: 22px;
+    display: block;
+    background-image: url(/img/logo/header-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 22px 22px;
   }
   .header__text {
+    width: 100px;
+    height: 22px;
     color: #000;
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 1.6px;
     text-transform: uppercase;
-    margin: 2px 0px 0px 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 2px;
   }
   .header__burger {
     display: block;
@@ -172,7 +183,8 @@
     margin-top: 60px;
   }
   .about__wrap {
-    height: 880px;
+    padding-top: 40px;
+    height: 870px;
     min-width: 0px;
     display: flex;
     flex-direction: column;
@@ -182,7 +194,7 @@
     width: 100%;
   }
   .about__slider-text {
-    margin-top: 25px;
+    margin-top: 0;
   }
   .about__title-text {
     font-size: 32px;
@@ -205,11 +217,23 @@
     margin: 25px auto 0px;
     width: 260px;
   }
-  .about__arrow img {
+  .about__arrow a {
     width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url(/img/elements/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+  }
+  .about__button {
+    background: #6E9C9F;
+  }
+  .about__button:hover {
+    background-color: #509498;
   }
   .about__block-two {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
     height: 100%;
     background: #F1EADC;
@@ -218,34 +242,38 @@
     justify-content: right;
     align-items: center;
   }
+  .about__slider-image {
+    width: 320px;
+  }
+  .about__image {
+    overflow: hidden;
+  }
   .about__image img {
     width: 100%;
-    max-height: 430px;
+    max-height: 410px;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 0px 0px;
+       object-position: 0px 0px;
   }
   .about__image-up {
     position: absolute;
-    top: 90px;
+    top: 20px;
     right: -70px;
     z-index: 1;
   }
   .about__image-up img {
-    width: 150px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 160px;
   }
   .about__image-down {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: -60px;
     z-index: 1;
   }
   .about__image-down img {
     max-width: 140px;
-    min-height: 180px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    min-height: 170px;
   }
   .button a {
     width: 210px;
@@ -258,7 +286,6 @@
     font-size: 14px;
     line-height: 138.9%;
     letter-spacing: 0.34px;
-    background: #6E9C9F;
   }
   .about__block-one .swiper-pagination {
     position: inherit;
@@ -283,6 +310,80 @@
   }
   .swiper-horizontal > .swiper-pagination-bullet {
     margin: 0;
+  }
+  .collection__wrap {
+    padding-top: 30px;
+    height: 100%;
+    margin-top: 50px;
+  }
+  .collection__header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.8px;
+  }
+  .collection__column {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .collection__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .collection__item:last-child {
+    margin-bottom: 0px;
+  }
+  .collection__image {
+    width: 100%;
+  }
+  .collection__image img {
+    width: 100%;
+    max-height: 390px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% -60px;
+       object-position: 50% -60px;
+  }
+  .collection__subimage {
+    text-align: center;
+  }
+  .collection__thing {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+  }
+  .collection__price {
+    margin-top: 7px;
+    color: #998E78;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+  }
+  .collection__price span {
+    color: #9C9C9C;
+    text-decoration: line-through;
+  }
+  .collection__button {
+    margin: 30px auto 0px;
+    width: 210px;
+    height: 50px;
+  }
+  .collection__button a {
+    color: #6E9C9F;
+    border: 1px solid #6E9C9F;
+  }
+  .collection__button:hover {
+    background-color: #6E9C9F;
+  }
+  .collection__button:hover a {
+    color: #FFF;
   }
   .lorem {
     margin-top: 50px;
