@@ -41,16 +41,7 @@
     position: relative;
     z-index: 3;
   }
-  .header__icon a {
-    width: 22px;
-    height: 22px;
-    display: block;
-    background-image: url(/img/logo/header-icon.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 22px 22px;
-  }
-  .header__text {
+  .header__text a {
     width: 100px;
     height: 22px;
     color: #000;
@@ -221,7 +212,7 @@
     width: 50px;
     height: 50px;
     display: block;
-    background-image: url(/img/elements/arrow-down.svg);
+    background-image: url(../img/about/arrow-down.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 50px 50px;
@@ -311,10 +302,12 @@
   .swiper-horizontal > .swiper-pagination-bullet {
     margin: 0;
   }
+  .collection {
+    margin-top: 30px;
+  }
   .collection__wrap {
     padding-top: 30px;
     height: 100%;
-    margin-top: 50px;
   }
   .collection__header {
     text-align: center;
@@ -332,6 +325,7 @@
   }
   .collection__item {
     width: 100%;
+    height: 100%;
     margin-bottom: 30px;
   }
   .collection__item:last-child {
@@ -340,13 +334,14 @@
   .collection__image {
     width: 100%;
   }
-  .collection__image img {
+  .collection__image a {
+    display: block;
+  }
+  .collection__image a img {
     width: 100%;
     max-height: 390px;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 50% -60px;
-       object-position: 50% -60px;
   }
   .collection__subimage {
     text-align: center;
@@ -385,8 +380,54 @@
   .collection__button:hover a {
     color: #FFF;
   }
+  .matter {
+    margin-top: 60px;
+  }
+  .matter__wrap {
+    height: 100%;
+  }
+  .matter__header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.8px;
+  }
+  .matter__column {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .matter__item {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .matter__item:last-child {
+    margin-bottom: 0;
+  }
+  .matter__image img {
+    width: 55px;
+  }
+  .matter__title {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+  }
+  .matter__subtitle {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.8px;
+    letter-spacing: 0.34px;
+  }
   .lorem {
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .lorem__text {
     color: #000;
