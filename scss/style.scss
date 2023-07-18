@@ -111,7 +111,6 @@ body.lock {
             font-size: 15px;
             letter-spacing: 0.3px;
         }
-
         &_color {
             a {
                 color: #6E9C9F;
@@ -296,10 +295,6 @@ body.lock {
     }
 }
 
-.swiper-horizontal>.swiper-pagination-bullet {
-    margin: 0;
-}
-
 //----------------------------------------------------------------------- collection
 
 .collection {
@@ -349,7 +344,6 @@ body.lock {
         font-weight: 500;
         line-height: 21px;
         letter-spacing: 0.3px;
-
         span {
             color: #9C9C9C;
             text-decoration: line-through;

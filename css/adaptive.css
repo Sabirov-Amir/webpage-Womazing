@@ -176,7 +176,6 @@
   .about__wrap {
     padding-top: 40px;
     height: 870px;
-    min-width: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -238,33 +237,40 @@
   }
   .about__image {
     overflow: hidden;
+    padding: 70% 0%;
+    position: relative;
   }
   .about__image img {
     width: 100%;
-    max-height: 410px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0px 0px;
        object-position: 0px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .about__image-up {
     position: absolute;
     top: 20px;
-    right: -70px;
+    right: -120px;
     z-index: 1;
   }
   .about__image-up img {
-    width: 160px;
+    width: 197px;
+    -o-object-position: -20px -20px;
+       object-position: -20px -20px;
   }
   .about__image-down {
     position: absolute;
     bottom: 20px;
-    left: -60px;
+    left: -70px;
     z-index: 1;
   }
   .about__image-down img {
-    max-width: 140px;
-    min-height: 170px;
+    width: 150px;
+    height: 220px;
   }
   .button a {
     width: 210px;
@@ -299,9 +305,6 @@
   .about__block-one .swiper-pagination-bullet-horizontal-gap {
     margin: 0;
   }
-  .swiper-horizontal > .swiper-pagination-bullet {
-    margin: 0;
-  }
   .collection {
     margin-top: 30px;
   }
@@ -331,17 +334,22 @@
   .collection__item:last-child {
     margin-bottom: 0px;
   }
-  .collection__image {
-    width: 100%;
-  }
   .collection__image a {
     display: block;
+    overflow: hidden;
+    padding: 60% 0%;
+    position: relative;
   }
   .collection__image a img {
     width: 100%;
-    max-height: 390px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 0px -40px;
+       object-position: 0px -40px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .collection__subimage {
     text-align: center;
