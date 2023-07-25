@@ -1,5 +1,5 @@
 
-// --------------------------------------------------------------------------------- 576 (responsive markup)
+// --------------------------------------------------------------------------------------------- 576 (responsive markup)
 
 @media (max-width: 575px) {
     .container {
@@ -9,7 +9,7 @@
         box-sizing: border-box;
     }
 
-    // ---------------------------------- navbar 576 - done
+    // ----------------------------------------------------- navbar 576 - done
 
     .header {
         height: 60px;
@@ -209,7 +209,7 @@
         }
     }
 
-    // ---------------------------------- about 576 - done
+    // ----------------------------------------------------- about 576 - done
 
     .about {
         margin-top: 60px;
@@ -314,13 +314,13 @@
 
         &__image {
             overflow: hidden;
-            padding: 70% 0%;
+            padding: 65% 0%; // padding: 70% 0%;
             position: relative;
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                object-position: 0px 0px;
+                object-position: 0px 0px; // object-position: 0px 0px;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -328,6 +328,7 @@
         }
 
         &__image-up {
+            //display: none;
             position: absolute;
             top: 20px;
             right: -120px;
@@ -339,6 +340,7 @@
         }
     
         &__image-down {
+            //display: none;
             position: absolute;
             bottom: 20px;
             left: -70px;
@@ -370,7 +372,7 @@
         position: inherit; // убрал position:absolute у стиля swiper
         bottom: 0; // обнуляю bottom: -8px; у стиля swiper
         margin: 30px auto 0px;
-        width: 114px;
+        width: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -391,14 +393,13 @@
         }
     }
 
-    // ---------------------------------- collection 576 - done
+    // ----------------------------------------------------- collection 576 - done
 
     .collection {
-        margin-top: 30px;
+        margin-top: 25px;
 
         &__wrap {
             padding-top: 30px;
-            //height: 857px; // height: 827px + padding-top: 30;
             height: 100%; 
         }
     
@@ -411,7 +412,7 @@
         }
     
         &__column {
-            margin-top: 40px;
+            margin-top: 25px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -443,13 +444,13 @@
             a {
                 display: block;
                 overflow: hidden;
-                padding: 60% 0%;
+                padding: 55% 0%; // padding: 60% 0%;
                 position: relative;
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    object-position: 0px -40px;
+                    object-position: 0px -50px; // object-position: 0px -40px;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -500,10 +501,10 @@
         }
     }
 
-    // ---------------------------------- matter 576 - done
+    // ----------------------------------------------------- matter 576 - done
 
     .matter {
-        margin-top: 60px;
+        margin-top: 55px;
     
         &__wrap {
             height: 100%;
@@ -518,7 +519,7 @@
         }
     
         &__column {
-            margin-top: 40px;
+            margin-top: 25px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -558,10 +559,125 @@
         }
     }
 
-    // ---------------------------------- lorem 576 - done
+    // ----------------------------------------------------- team 576 - done
+
+    .team {
+        margin-top: 55px;
+    
+        &__wrap {
+            //height: 623px;
+        }
+    
+        &__header {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 44px;
+            letter-spacing: 0.8px;
+            margin-bottom: 30px;
+        }
+    
+        &__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        &__block-one {
+            width: 100%;
+        }
+    
+        &__slider {
+        }
+
+        &__wrapper {
+        }
+    
+        &__slide {
+        }
+    
+        &__image {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    
+        &__block-two {
+            width: 100%;
+            text-align: center;
+            margin-top: 25px;
+        }
+    
+        &__title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+            margin-bottom: 28px;
+        }
+    
+        &__subtitle {
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 23.8px;
+                letter-spacing: 0.34px;
+            }
+            & > p {
+                margin-bottom: 20px;
+            }
+            margin-bottom: 28px;
+        }
+    
+        &__link {
+            a {
+                color: #6E9C9F;
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 23.8px;
+                letter-spacing: 0.34px;
+            }
+        }
+    }
+    
+    .team__block-one .swiper-pagination {
+        position: inherit; // убрал position:absolute у стиля swiper
+        bottom: 15px;
+        margin: 0px auto 0px; 
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        &-bullet {
+            border-radius: 0px;
+            width: 26px;
+            height: 4px;
+            background-color: rgba(255, 255, 255, 0.36);
+            opacity: 1; // переназначил opacity у swiper
+    
+            &-active {
+                background-color: #ffffff;
+            }
+        }
+    }
+    
+    // Remove 'margin-left/right: 4px' 
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin:0 var(--swiper-pagination-bullet-horizontal-gap,0px)
+    }
+    
+    .swiper-button-prev,.swiper-button-next {
+        color: #FFF;
+    }
+
+    // ----------------------------------------------------- lorem 576 - done
 
     .lorem {
-        margin-top: 60px;
+        margin-top: 55px;
 
         &__wrap {
         }
@@ -574,7 +690,7 @@
         }
     }
 
-    // ---------------------------------- popup 576 - done
+    // ----------------------------------------------------- popup 576 - done
 
     .popup {
         position: fixed;
@@ -695,6 +811,3 @@
         }
     }
 }
-
-
-

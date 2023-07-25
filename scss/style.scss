@@ -272,8 +272,8 @@ body.lock {
 
 .about__block-one .swiper-pagination {
     position: inherit; // убрал position:absolute у стиля swiper
-    bottom: 0; // обнуляю bottom: -8px; у стиля swiper
-    margin: 81px 0px 0px 290px ; // 286px(вместо 290) когда уберу margin: 4px
+    bottom: 0; // обнуляю bottom: 8px; у стиля swiper
+    margin: 81px 0px 0px 286px;
     width: 114px;
     display: flex;
     justify-content: space-between;
@@ -283,16 +283,19 @@ body.lock {
         border-radius: 0px;
         width: 30px;
         height: 4px;
-        margin: 0px;
-
+        background-color: #D1D1D1;
+        opacity: 1; // переназначил opacity у swiper
+        
         &-active {
             background-color: #000;
         }
-
-        &-horizontal-gap {
-            margin: 0;
-        }
     }
+}
+
+// Remove 'margin-left/right: 4px' 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin:0 var(--swiper-pagination-bullet-horizontal-gap,0px)
 }
 
 //----------------------------------------------------------------------- collection
@@ -415,6 +418,125 @@ body.lock {
         letter-spacing: 0.34px;
     }
 }
+
+//----------------------------------------------------------------------- team
+
+.team {
+    margin-top: 130px;
+
+    &__wrap {
+        //height: 623px;
+    }
+
+    &__header {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+        margin-bottom: 92px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__block-one {
+        width: 729px;
+    }
+
+    &__slider {
+    }
+
+    &__wrapper {
+    }
+
+    &__slide {
+    }
+
+    &__image {
+    }
+
+    &__block-two {
+        width: 257px;
+    }
+
+    &__title {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: 0.5px;
+        margin-bottom: 28px;
+    }
+
+    &__subtitle {
+        p {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 23.8px;
+            letter-spacing: 0.34px;
+        }
+        & > p {
+            margin-bottom: 20px;
+        }
+        margin-bottom: 28px;
+    }
+
+    &__link {
+        a {
+            color: #6E9C9F;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 23.8px;
+            letter-spacing: 0.34px;
+        }
+    }
+}
+
+.team__block-one .swiper-pagination {
+    position: inherit; // убрал position:absolute у стиля swiper
+    bottom: 61px;
+    margin: 0px auto 0px; 
+    width: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-bullet {
+        border-radius: 0px;
+        width: 30px;
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.36);
+        opacity: 1; // переназначил opacity у swiper
+
+        &-active {
+            background-color: #ffffff;
+        }
+    }
+}
+
+// Remove 'margin-left/right: 4px' 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin:0 var(--swiper-pagination-bullet-horizontal-gap,0px)
+}
+
+.swiper-button-prev,.swiper-button-next {
+    color: #FFF;
+}
+
+// .swiper-button-prev {
+//     background-image: url(../img/team/arrow-prev.svg);
+//     background-repeat: no-repeat;
+//     background-position: 0% 50%;
+// }
+
+// .swiper-button-next {
+//     background-image: url(../img/team/arrow-next.svg);
+//     background-repeat: no-repeat;
+//     background-position: -5px 50%;
+// }
 
 //----------------------------------------------------------------------- lorem
 

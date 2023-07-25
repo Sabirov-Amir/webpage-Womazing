@@ -281,7 +281,7 @@ body.lock {
 .about__block-one .swiper-pagination {
   position: inherit;
   bottom: 0;
-  margin: 81px 0px 0px 290px;
+  margin: 81px 0px 0px 286px;
   width: 114px;
   display: flex;
   justify-content: space-between;
@@ -291,13 +291,16 @@ body.lock {
   border-radius: 0px;
   width: 30px;
   height: 4px;
-  margin: 0px;
+  background-color: #D1D1D1;
+  opacity: 1;
 }
 .about__block-one .swiper-pagination-bullet-active {
   background-color: #000;
 }
-.about__block-one .swiper-pagination-bullet-horizontal-gap {
-  margin: 0;
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0px);
 }
 
 .collection {
@@ -393,6 +396,83 @@ body.lock {
   font-weight: 500;
   line-height: 23.8px;
   letter-spacing: 0.34px;
+}
+
+.team {
+  margin-top: 130px;
+}
+.team__header {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0.8px;
+  margin-bottom: 92px;
+}
+.team__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team__block-one {
+  width: 729px;
+}
+.team__block-two {
+  width: 257px;
+}
+.team__title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+  margin-bottom: 28px;
+}
+.team__subtitle {
+  margin-bottom: 28px;
+}
+.team__subtitle p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23.8px;
+  letter-spacing: 0.34px;
+}
+.team__subtitle > p {
+  margin-bottom: 20px;
+}
+.team__link a {
+  color: #6E9C9F;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23.8px;
+  letter-spacing: 0.34px;
+}
+
+.team__block-one .swiper-pagination {
+  position: inherit;
+  bottom: 61px;
+  margin: 0px auto 0px;
+  width: 114px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team__block-one .swiper-pagination-bullet {
+  border-radius: 0px;
+  width: 30px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.36);
+  opacity: 1;
+}
+.team__block-one .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0px);
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #FFF;
 }
 
 .lorem {
