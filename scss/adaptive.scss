@@ -88,7 +88,7 @@
                 width: 100%;
                 height: 2px;
                 left: 0;
-                transition-duration: 300ms;
+                transition-duration: 200ms;
             }
             &::before {
                 top: 0;
@@ -125,16 +125,16 @@
             display: block; // убираю flex
             position: fixed;
             width: 100%;
-            height: 310px; 
+            height: 320px; 
             top: -100%;
             left: 0;
 
             z-index: 1;
 
             background-color: #F1EADC;
-            padding: 84px 0px 0px 0px;
+            padding: 82px 0px 0px 0px;
             text-align: center;
-            transition-duration: 300ms;
+            transition-duration: 200ms;
             transition-timing-function: ease-out;
         }
 
@@ -175,7 +175,7 @@
                 position: absolute;
                 width: 5px;
                 height: 5px;
-                top: 28px;
+                top: 29px;
                 left: 32.5px;
                 border-radius: 50%;
                 background-color: #6E9C9F;
@@ -184,7 +184,7 @@
     
         &__call {
             margin: 0px auto 0px;
-            transform: translateY(45px);
+            transform: translateY(50px);
         }
     
         &__number {
@@ -674,19 +674,153 @@
         color: #FFF;
     }
 
-    // ----------------------------------------------------- lorem 576 - done
+    // ----------------------------------------------------- footer 576 - done
 
-    .lorem {
+    .footer {
         margin-top: 55px;
-
+        background-color: #F1EADC;
+        //height: 364px;
+        padding: 45px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
         &__wrap {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__column-one {
+            margin-right: 0px;
+            order: 3;
+        }
+    
+        &__logo {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 67px;
+            display: none; // Remove only logo
+        }
+    
+        &__icon {
         }
     
         &__text {
-            color: #000;
-            font-size: 15px;
-            letter-spacing: 0.5px; 
-            text-align: justify; 
+            a {
+                width: 115px;
+                height: 25px;
+                
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+        
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-top: 3px;
+            }
+        }
+    
+        &__info {   
+            text-align: center;
+        }
+    
+        &__info-item {
+            a {
+                color: #000;
+                font-size: 12px;
+                line-height: 18.2px;
+                letter-spacing: 0.26px;
+            }
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    
+        &__column-two {
+            margin-right: 0px;
+            order: 1;
+            display: none; // Remove all block
+        }
+    
+        &__navigation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 37px;
+            text-align: center;
+        }
+    
+        &__link {
+            margin: 0px 0px 20px 0px;
+            &:last-child {
+                margin: 0px 0px 0px 0px;
+            }
+            a {
+                color: #000;
+                font-size: 15px;
+                line-height: 18.2px;
+                letter-spacing: 0.3px;
+            }
+            &_color {
+                a {
+                    color: #6E9C9F;
+                    font-weight: 700;
+                }
+            }
+        }
+    
+        &__clothes {
+            margin-left: 0px;
+            display: none;
+        }
+    
+        &__item {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                color: #000;
+                font-size: 13px;
+                line-height: 18.2px;
+                letter-spacing: 0.26px;
+            }
+        }
+    
+        &__column-three {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            order: 2;
+            margin-bottom: 25px;
+        }
+    
+        &__number {
+            margin-bottom: 9px;
+        }
+    
+        &__post {
+            margin-bottom: 25px;
+        }
+    
+        &__socials {
+            display: flex;
+            margin-bottom: 25px;
+        }
+    
+        &__socials-item {
+            margin-right: 12px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    
+        &__card {
         }
     }
 

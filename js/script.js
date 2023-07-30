@@ -54,7 +54,7 @@ if (headerCall) {
     });
 }
 
-// При клике на контент(.lorem) закрывается меню бургер
+// При клике на контент(.close-menu) закрывается меню бургер
 const closeMenu = document.querySelector('.close-menu');
 if (closeMenu) {
     closeMenu.addEventListener("click", function(e) {
@@ -67,8 +67,8 @@ if (closeMenu) {
 //-----------------------------------------------------------------------------------------------------------------------------------------
 
 // Show which blocks when click 
-const headerMenuActive = document.querySelector('.header__menu.active');
-document.addEventListener('click', (e) => {
-       const click = e.composedPath();
-       console.log(click);
-})
+// const headerMenuActive = document.querySelector('.header__menu.active');
+// document.addEventListener('click', (e) => {
+//        const click = e.composedPath();
+//        console.log(click);
+// })
