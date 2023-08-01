@@ -150,328 +150,75 @@ body.lock {
     }
 }
 
-//----------------------------------------------------------------------- about
+//----------------------------------------------------------------------- main
 
-.about {
+.main {
     margin-top: 96px;
 
     &__wrap {
-        padding-top: 40px;
-        height: 732px; // height: 692px + padding-top: 40; 
-        min-width: 0px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__block-one {
-        width: 554px;
-    }
-
-    &__slider-text {
-        margin-top: 131px;
-    }
-
-    &__wrap-text {
-    }
-
-    &__slide-text {
-    }
-
-    &__title-text {
-        font-size: 55px;
-        font-weight: 500;
-        line-height: 110%;
-        letter-spacing: 1.1px;
-    }
-
-    &__subtitle-text {
-        width: 385px;
-        margin: 45px 0px 0px 15px;
-        text-align: right;
-        font-size: 20px;
-        line-height: 140%;
-        letter-spacing: 0.4px;
-    }
-
-    &__navigation {
-        display: flex;
-        margin: 52px 0px 0px 90px;
-    }
-
-    &__arrow {
-        a {
-            width: 68px;
-            height: 68px;
-            display: block;
-            background-image: url(../img/about/arrow-down.svg);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: 68px 68px;
-        }
-    }
-
-    &__button {
-        background: #6E9C9F;
-        &:hover {
-            background-color: #509498;
-        }
-    }
-
-    &__block-two {
-        width: 460px;
-        background: #F1EADC;
-        position: relative; // for .about__image-up/down
-        
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-
-    &__slider-image {
-    }
-
-    &__wrap-image {
-    }
-
-    &__slide-image {
-    }
-
-    &__image {
-    }
-
-    &__image-up {
-        position: absolute;
-        top: 109px;
-        right: -116px;
-        z-index: 1;
-    }
-
-    &__image-down {
-        position: absolute;
-        bottom: 0;
-        left: -80px;
-        z-index: 1;
-    }
-}
-
-.button {
-    width: 243px;
-    a {
-        width: 243px;
-        height: 68px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        color: #FFF;
-        text-align: center;
-        font-size: 17px;
-        line-height: 138.9%;
-        letter-spacing: 0.34px;
-    }
-}
-
-.about__block-one .swiper-pagination {
-    position: inherit; // убрал position:absolute у стиля swiper
-    bottom: 0; // обнуляю bottom: 8px; у стиля swiper
-    margin: 81px 0px 0px 286px;
-    width: 114px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &-bullet {
-        border-radius: 0px;
-        width: 30px;
-        height: 4px;
-        background-color: #D1D1D1;
-        opacity: 1; // переназначил opacity у swiper
-        
-        &-active {
-            background-color: #000;
-        }
-    }
-}
-
-// Remove 'margin-left/right: 4px' 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin:0 var(--swiper-pagination-bullet-horizontal-gap,0px)
-}
-
-//----------------------------------------------------------------------- collection
-
-.collection {
-    margin-top: 100px;
-    
-    &__wrap {
-        padding-top: 30px;
-        height: 857px; // height: 827px + padding-top: 30; 
+        padding-top: 74px;
     }
 
     &__header {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 44px;
-        letter-spacing: 0.8px;
     }
 
-    &__column {
-        margin-top: 92px;
+    &__title {
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 60.5px;
+        letter-spacing: 1.1px;
+        margin-bottom: 26px;
+    }
+
+    &__nav {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-bottom: 214px;
     }
 
-    &__item {
-    }
-
-    &__image { 
-    }
-
-    &__subimage {
-        text-align: center;
-    }
-
-    &__thing {
-        margin-top: 24px;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 28px;
-        letter-spacing: 0.4px;
-    }
-
-    &__price {
-        margin-top: 7px;
-        color: #998E78;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 21px;
-        letter-spacing: 0.3px;
-        span {
-            color: #9C9C9C;
-            text-decoration: line-through;
-        }
-    }
-
-    &__button {
-        margin: 65px auto 0px;
+    &__link {
         a {
-            color: #6E9C9F; 
-            border: 1px solid #6E9C9F;
+            color: #000;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 23.8px;
+            letter-spacing: 0.34px;
         }
-        &:hover {
-            background-color: #6E9C9F;
+        &_color {
             a {
-                color: #FFF;
+                color: #909090;
             }
         }
     }
-}
 
-//----------------------------------------------------------------------- matter
-
-.matter {
-    margin-top: 130px;
-
-    &__wrap {
-        height: 408px;
+    &__dash {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 13px 0px 13px;
     }
 
-    &__header {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 44px;
-        letter-spacing: 0.8px;
+    &__about {
     }
 
-    &__column {
-        margin-top: 92px;
+    &__block-top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    &__item {
-        height: 272px;
-        width: 305px;
+        margin-bottom: 130px;
     }
 
     &__image {
-        img {
-            width: 61px;
+    }
+
+    &__text {
+        width: 542px;
+        h3 {
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+            margin-bottom: 46px;
         }
-    }
-
-    &__title {
-        margin-top: 37px;
-        font-size: 25px;
-        font-weight: 500;
-        line-height: 35px;
-        letter-spacing: 0.5px;
-    }
-
-    &__subtitle {
-        margin-top: 24px;
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 23.8px;
-        letter-spacing: 0.34px;
-    }
-}
-
-//----------------------------------------------------------------------- team
-
-.team {
-    margin-top: 130px;
-
-    &__wrap {
-        //height: 623px;
-    }
-
-    &__header {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 44px;
-        letter-spacing: 0.8px;
-        margin-bottom: 92px;
-    }
-
-    &__block {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__block-one {
-        width: 729px;
-    }
-
-    &__slider {
-    }
-
-    &__wrapper {
-    }
-
-    &__slide {
-    }
-
-    &__image {
-    }
-
-    &__block-two {
-        width: 257px;
-    }
-
-    &__title {
-        font-size: 25px;
-        font-weight: 500;
-        line-height: 35px;
-        letter-spacing: 0.5px;
-        margin-bottom: 28px;
-    }
-
-    &__subtitle {
         p {
             font-size: 17px;
             font-weight: 500;
@@ -479,65 +226,38 @@ body.lock {
             letter-spacing: 0.34px;
         }
         & > p {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
-        margin-bottom: 28px;
     }
 
-    &__link {
+    &__block-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 130px;
+    }
+
+    &__button {
+        margin: 0px auto 130px;
+        width: 260px;
+        background: #6E9C9F;
         a {
-            color: #6E9C9F;
+            height: 68px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            color: #FFF;
+            text-align: center;
             font-size: 17px;
-            font-weight: 500;
-            line-height: 23.8px;
+            line-height: 138.9%;
             letter-spacing: 0.34px;
         }
-    }
-}
-
-.team__block-one .swiper-pagination {
-    position: inherit; // убрал position:absolute у стиля swiper
-    bottom: 61px;
-    margin: 0px auto 0px; 
-    width: 114px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &-bullet {
-        border-radius: 0px;
-        width: 30px;
-        height: 4px;
-        background-color: rgba(255, 255, 255, 0.36);
-        opacity: 1; // переназначил opacity у swiper
-
-        &-active {
-            background-color: #ffffff;
+        &:hover {
+            background-color: #509498;
         }
     }
 }
-
-// Remove 'margin-left/right: 4px' 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin:0 var(--swiper-pagination-bullet-horizontal-gap,0px)
-}
-
-.swiper-button-prev,.swiper-button-next {
-    color: #FFF;
-}
-
-// .swiper-button-prev {
-//     background-image: url(../img/team/arrow-prev.svg);
-//     background-repeat: no-repeat;
-//     background-position: 0% 50%;
-// }
-
-// .swiper-button-next {
-//     background-image: url(../img/team/arrow-next.svg);
-//     background-repeat: no-repeat;
-//     background-position: -5px 50%;
-// }
 
 //----------------------------------------------------------------------- footer
 
