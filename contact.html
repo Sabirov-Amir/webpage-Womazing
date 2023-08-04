@@ -7,9 +7,9 @@
     <meta name="format-detection" content="telephone=no">
     <title>Womazing</title>
     <!-- Main style -->
-    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/contact.css">
     <!-- Adaptive style -->
-    <link rel="stylesheet" href="css/brand-adaptive.css">
+    <link rel="stylesheet" href="css/contact-adaptive.css">
 </head>
 <body>
     
@@ -43,11 +43,11 @@
                             <div class="header__link">
                                 <a href="##">Магазин</a>
                             </div>
-                            <div class="header__link header__link_color">
-                                <a data-goto=".main" class="navigation" href="##">О бренде</a>
-                            </div>
                             <div class="header__link">
-                                <a href="contact.html">Контакты</a>
+                                <a href="brand.html">О бренде</a>
+                            </div>
+                            <div class="header__link header__link_color">
+                                <a data-goto=".main" class="navigation" href="##">Контакты</a>
                             </div>
                         </div>
                         <div class="header__call">
@@ -76,7 +76,7 @@
             
                         <div class="main__header">
                             <div class="main__title">
-                                О бренде
+                                Контакты
                             </div>
                             <div class="main__nav">
                                 <div class="main__link">
@@ -86,53 +86,68 @@
                                     —
                                 </div>
                                 <div class="main__link main__link_color">
-                                    <a data-goto=".main" class="navigation" href="##">О бренде</a>
+                                    <a data-goto=".main" class="navigation" href="##">Контакты</a>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="main__about">
-                            <div class="main__block-top">
-                                <div class="main__image">
-                                    <img src="img/brand/girl-top.jpg">
-                                </div>	
-                                <div class="main__text">
-                                    <h3>
-                                        Идея и женщина
-                                    </h3>
-                                    <p>
-                                        Womazing была основана в 2010-ом и стала одной из самых успешных компаний нашей страны. Как и многие итальянские фирмы, Womazing остаётся семейной компанией, хотя ни один из членов семьи не является модельером.
-                                    </p>
-                                    <p>
-                                        Мы действуем по успешной формуле, прибегая к услугам известных модельеров для создания своих коллекций. Этот метод был описан критиком моды Колином Макдауэллом как форма дизайнерского со-творчества, характерная для ряда итальянских prêt-a-porter компаний.
-                                    </p>
+                        <div class="main__map">
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17942.67499382953!2d49.11546428354396!3d55.79611382569343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead0fbe939293%3A0x853e514b0017e4f6!2sGloria%20Jeans!5e0!3m2!1sru!2sru!4v1691031835806!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                        
+                        <div class="main__contacts">
+                            <div class="main__contact">
+                                <div class="main__whatIs">
+                                    Телефон
+                                </div>
+                                <div class="main__info">
+                                    +7 (495) 823-54-12
                                 </div>
                             </div>
-                            <div class="main__block-bottom">
-                                <div class="main__text">
-                                    <h3>
-                                        Магия в деталях
-                                    </h3>
-                                    <p>
-                                        Первый магазин Womazing был открыт в маленьком городке на севере страны в 2010-ом году. Первая коллекция состояла из двух пальто и костюма, которые были копиями парижских моделей.
-                                    </p>
-                                    <p>
-                                        Несмотря на то, что по образованию основательница была адвокатом, ее семья всегда была тесно связана с шитьём (прабабушка основательницы шила одежду для женщин, а мать основала профессиональную школу кроя и шитья). Стремление производить одежду для масс несло в себе большие перспективы, особенно в то время, когда высокая мода по-прежнему доминировала, а рынка качественного prêt-a-porter попросту не существовало.
-                                    </p>
-                                </div>	
-                                <div class="main__image">
-                                    <img src="img/brand/girl-bottom.jpg">
+                            <div class="main__contact">
+                                <div class="main__whatIs">
+                                    E-mail
+                                </div>
+                                <div class="main__info">
+                                    info@sitename.com
+                                </div>
+                            </div>
+                            <div class="main__contact">
+                                <div class="main__whatIs">
+                                    Адрес
+                                </div>
+                                <div class="main__info">
+                                    г. Казань, ул. Петербургская, 9
                                 </div>
                             </div>
                         </div>
-                    
-                        <div class="main__button">
-                            <a href="##">Перейти в магазин</a>
-                        </div>
+            
+                        <form class="main__form" action="#" method="get">
+                            <div class="main__form-title">
+                                Напишите нам
+                            </div>
+                            <div class="main__input">
+                                <input type="name" name="firstname" placeholder="Имя">
+                            </div>
+                            <div class="main__input">
+                                <input type="email" name="e-mail" placeholder="E-mail">
+                            </div>
+                            <div class="main__input">
+                                <input type="tel" name="number" placeholder="Телефон">
+                            </div>
+                            <div class="main__textarea">
+                                <textarea name="message" placeholder="Сообщения"></textarea>
+                            </div>
+                            <div class="main__button">
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </form>
             
                     </div>
                 </div>
-            </div>
+            </div>            
 
             <!------------------------------------------------------------------------------------------------>
 
@@ -180,11 +195,11 @@
                                 <div class="footer__link">
                                     <a href="##">Магазин</a>
                                 </div>
-                                <div class="footer__link footer__link_color">
-                                    <a data-goto=".main" class="navigation" href="##">О бренде</a>
-                                </div>
                                 <div class="footer__link">
-                                    <a href="contact.html">Контакты</a>
+                                    <a href="brand.html">О бренде</a>
+                                </div>
+                                <div class="footer__link footer__link_color">
+                                    <a data-goto=".main" class="navigation" href="##">Контакты</a>
                                 </div>
                             </div>
                             <div class="footer__clothes">
@@ -282,6 +297,13 @@
 
     <script src="js/script.js"></script>
     <script src="js/popup.js"></script>
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+          key: "YOUR_API_KEY_HERE",
+          // Add other bootstrap parameters as needed, using camel case.
+          // Use the 'v' parameter to indicate the version to load (alpha, beta, weekly, etc.)
+        });
+      </script>
 
 </body>
 </html>
