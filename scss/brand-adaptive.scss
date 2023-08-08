@@ -252,7 +252,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0px 8px 0px 8px;
+            margin: -1.5px 8px 0px 8px;
         }
     
         &__about {
@@ -305,7 +305,7 @@
         }
     
         &__button {
-            margin: 0px auto 55px;
+            margin: 0px auto;
             width: 210px;
             background: #6E9C9F;
             a {

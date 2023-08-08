@@ -326,14 +326,17 @@ body.lock {
     }
 
     &__image { 
+        a {
+            display: block;
+        }
     }
 
     &__subimage {
+        margin-top: 24px;
         text-align: center;
     }
 
     &__thing {
-        margin-top: 24px;
         font-size: 20px;
         font-weight: 500;
         line-height: 28px;

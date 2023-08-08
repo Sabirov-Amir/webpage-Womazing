@@ -197,103 +197,86 @@ body.lock {
         margin: 0px 13px 0px 13px;
     }
 
-    &__map {
-        iframe {
-            width: 1100px;
-            height: 476px;
-        }
-        margin-bottom: 130px;
+    &__tabs {
     }
 
-    &__contacts {
+    &__tabs-items {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 130px;
+        margin-bottom: 92px;
     }
 
-    &__contact {
-    }
+    &__tabs-item {
+        cursor: pointer;
+        padding: 19px 65px;
 
-    &__whatIs {
+        color: #000;
         font-size: 17px;
         font-weight: 500;
         line-height: 23.8px;
         letter-spacing: 0.34px;
-        margin-bottom: 19px;
+        border: 1px solid #000;
+
+        &.tabs-item-active {
+            color: #fff;
+            background-color: #000;
+        }
     }
 
-    &__info {
+    &__tabs-body {
+    }
+
+    &__tabs-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__tabs-product {
+        width: 350px;
+        height: 100%;
+        margin-bottom: 65px;
+        &:nth-child(7) {
+            margin-bottom: 0;
+        }
+        &:nth-child(8) {
+            margin-bottom: 0;
+        }
+        &:nth-child(9) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__tabs-image {
+        a {
+            display: block;
+        }
+    }
+
+    &__tabs-subimage {
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    &__tabs-thing {
         font-size: 20px;
         font-weight: 500;
         line-height: 28px;
         letter-spacing: 0.4px;
     }
 
-    &__form {
-    }
-
-    &__form-title {
-        font-size: 25px;
+    &__tabs-price {
+        margin-top: 7px;
+        color: #998E78;
+        font-size: 15px;
         font-weight: 500;
-        line-height: 35px;
-        letter-spacing: 0.5px;
-        margin-bottom: 62px;
+        line-height: 21px;
+        letter-spacing: 0.3px;
     }
+}
 
-    &__input {
-        width: 350px;
-        height: 40px;
-        border-bottom: 1px solid #000;
-        margin-bottom: 35px;
-        & input {
-            width: 350px;
-            color: #868686;
-            font-size: 17px;
-            font-weight: 500;
-            line-height: 23.8px;
-            letter-spacing: 0.34px;
-        }
-        // & input[type] {
-        //     color: #000;
-        // }
-    }
-
-    &__textarea {
-        margin-bottom: 35px;
-        textarea {
-            width: 442px;
-            height: 134px;
-            color: #868686;
-            font-size: 17px;
-            font-weight: 500;
-            line-height: 23.8px;
-            letter-spacing: 0.34px;
-            border-bottom: 1px solid #000;
-            resize: none;
-            overflow-y: auto;
-        }
-    }
-
-    &__button {
-        width: 190px;
-        button {
-            width: 190px;
-            height: 68px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #6E9C9F;
-            
-            color: #FFF;
-            text-align: center;
-            font-size: 17px;
-            line-height: 138.9%;
-            letter-spacing: 0.34px;
-        }
-        &:hover {
-            background-color: #509498;
-        }
-    }
+.tabs-content-hidden {
+    display: none;
 }
 
 //----------------------------------------------------------------------- footer

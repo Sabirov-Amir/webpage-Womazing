@@ -203,7 +203,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 8px 0px 8px;
+    margin: -1.5px 8px 0px 8px;
   }
   .main__map {
     margin-bottom: 55px;
@@ -274,7 +274,6 @@
     overflow-y: auto;
   }
   .main__button {
-    margin: 0px 0px 55px 0px;
     width: 190px;
   }
   .main__button button {

@@ -1,4 +1,3 @@
-
 // --------------------------------------------------------------------------------------------- 576 (responsive markup)
 
 @media (max-width: 575px) {
@@ -209,256 +208,110 @@
         }
     }
 
-    // ----------------------------------------------------- about 576 - done
+    // ----------------------------------------------------- main 576 - done
 
-    .about {
+    .main {
         margin-top: 60px;
     
         &__wrap {
             padding-top: 40px;
-            height: 870px; // height: 830px + padding-top: 40; 
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    
-        &__block-one {
-            width: 100%;
-        }
-    
-        &__slider-text {
-            margin-top: 0; // обнуляю у style.scss
-        }
-    
-        &__wrap-text {
-        }
-    
-        &__slide-text {
-        }
-    
-        &__title-text {
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 110%;
-            letter-spacing: 1.1px;
-            text-align: center;
-        }
-    
-        &__subtitle-text {
-            width: 100%;
-            margin: 25px 0px 0px 0px;
-            text-align: right;
-            font-size: 14px;
-            line-height: 140%;
-            letter-spacing: 0.4px;
-            text-align: center;
-        }
-    
-        &__navigation {
-            display: flex;
-            margin: 25px auto 0px;
-            width: 260px;
-        }
-    
-        &__arrow {
-            a {
-                width: 50px;
-                height: 50px;
-                display: block;
-                background-image: url(../img/about/arrow-down.svg);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                background-size: 50px 50px;
-            }
-        }
-    
-        &__button {
-            background: #6E9C9F;
-            &:hover {
-                background-color: #509498;
-            }
-        }
-    
-        &__block-two {
-            margin-top: 40px;
-            width: 100%;
-            height: 100%;
-            background: #F1EADC;
-            //background: #fff;
-            position: relative; // for .about__image-up/down
-            
-            display: flex;
-            justify-content: right;
-            align-items: center;
-        }
-    
-        &__slider-image {
-            width: 320px;
-        }
-    
-        &__wrap-image {
-        }
-    
-        &__slide-image {
-        }
-
-        &__image {
-            // -------------------------- main option
-            // overflow: hidden;
-            // padding: 65% 0%; // padding: 70% 0%;
-            // position: relative;
-            // img {
-            //     width: 100%;
-            //     height: 100%;
-            //     object-fit: cover;
-            //     object-position: 0px 0px; // object-position: 0px 0px;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            // }
-            // -------------------------- other option
-            overflow: hidden;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: 0px 0px;
-                }
-        }
-
-        &__image-up {
-            //display: none;
-            position: absolute;
-            top: 20px;
-            right: -120px;
-            z-index: 1;
-            // img {
-            //     width: 197px;
-            //     object-position: -20px -20px;
-            // }
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: -20px 0px;
-            }
-        }
-    
-        &__image-down {
-            //display: none;
-            position: absolute;
-            bottom: 20px;
-            left: -70px;
-            z-index: 1;
-            // img {
-            //     width: 150px;
-            //     height: 220px;
-            // }
-
-            img {
-                width: 100%;
-                max-height: 250px;
-                object-fit: cover;
-                object-position: 0px 0px;
-            }
-        }
-    }
-    
-    .button {
-        a {
-            width: 210px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            color: #FFF;
-            text-align: center;
-            font-size: 14px;
-            line-height: 138.9%;
-            letter-spacing: 0.34px;
-        }
-    }
-    
-    .about__block-one .swiper-pagination {
-        position: inherit; // убрал position:absolute у стиля swiper
-        bottom: 0; // обнуляю bottom: -8px; у стиля swiper
-        margin: 30px auto 0px;
-        width: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    
-        &-bullet {
-            border-radius: 0px;
-            width: 26px;
-            height: 4px;
-            margin: 0px;
-    
-            &-active {
-                background-color: #000;
-            }
-    
-            &-horizontal-gap {
-                margin: 0;
-            }
-        }
-    }
-
-    // ----------------------------------------------------- collection 576 - done
-
-    .collection {
-        margin-top: 25px;
-
-        &__wrap {
-            padding-top: 30px;
-            height: 100%; 
         }
     
         &__header {
-            text-align: center;
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 44px;
-            letter-spacing: 0.8px;
+            margin-bottom: 55px;
         }
     
-        &__column {
-            margin-top: 25px;
+        &__title {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            letter-spacing: 1.1px;
+            margin-bottom: 10px;
+        }
+    
+        &__nav {
+            display: flex;
+        }
+    
+        &__link {
+            a {
+                color: #000;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 23.8px;
+                letter-spacing: 0.34px;
+            }
+            &_color {
+                a {
+                    color: #909090;
+                }
+            }
+        }
+    
+        &__dash {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -1.5px 8px 0px 8px;
+        }
+    
+        &__tabs {
+        }
+    
+        &__tabs-items {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            align-items: center;
+            margin-bottom: 55px;
         }
     
-        &__item {
+        &__tabs-item {
+            cursor: pointer;
+            padding: 8px 40px;
+    
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 23.8px;
+            letter-spacing: 0.34px;
+            border: 1px solid #000;
+    
+            &.tabs-item-active {
+                color: #fff;
+                background-color: #000;
+            }
+            margin-bottom: 6px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    
+        &__tabs-body {
+        }
+    
+        &__tabs-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    
+        &__tabs-product {
             width: 100%;
             height: 100%;
             margin-bottom: 30px;
-            &:last-child {
+            &:nth-child(7) {
+                margin-bottom: 30px;
+            }
+            &:nth-child(8) {
+                margin-bottom: 30px;
+            }
+            &:nth-child(9) {
                 margin-bottom: 0px;
             }
+            
         }
-
-        &__image { 
-            // -------------------- main option
-            // a {
-            //     display: block;
-            //     overflow: hidden;
-            //     padding: 55% 0%; // padding: 60% 0%;
-            //     position: relative;
-            //     img {
-            //         width: 100%;
-            //         height: 100%;
-            //         object-fit: cover;
-            //         object-position: 0px -50px; // object-position: 0px -40px;
-            //         position: absolute;
-            //         top: 0;
-            //         left: 0;
-            //     }
-            // } 
-            // -------------------- another option
+    
+        &__tabs-image {
             a {
                 display: block;
                 overflow: hidden;
@@ -471,220 +324,30 @@
             }
         }
     
-        &__subimage {
+        &__tabs-subimage {
             margin-top: 10px;
             text-align: center;
         }
     
-        &__thing {
+        &__tabs-thing {
             font-size: 20px;
             font-weight: 500;
             line-height: 28px;
             letter-spacing: 0.4px;
         }
     
-        &__price {
+        &__tabs-price {
             margin-top: 7px;
             color: #998E78;
             font-size: 15px;
             font-weight: 500;
             line-height: 21px;
             letter-spacing: 0.3px;
-    
-            span {
-                color: #9C9C9C;
-                text-decoration: line-through;
-            }
-        }
-    
-        &__button {
-            margin: 30px auto 0px;
-            width: 210px;
-            height: 50px;
-            a {
-                color: #6E9C9F; 
-                border: 1px solid #6E9C9F;
-            }
-            &:hover {
-                background-color: #6E9C9F;
-                a {
-                    color: #FFF;
-                }
-            }
-        }
-    }
-
-    // ----------------------------------------------------- matter 576 - done
-
-    .matter {
-        margin-top: 55px;
-    
-        &__wrap {
-            height: 100%;
-        }
-    
-        &__header {
-            text-align: center;
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 44px;
-            letter-spacing: 0.8px;
-        }
-    
-        &__column {
-            margin-top: 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-    
-        &__item {
-            text-align: center;
-            height: 100%;
-            width: 100%;
-            margin-bottom: 30px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    
-        &__image {
-            img {
-                width: 55px;
-            }
-        }
-    
-        &__title {
-            margin-top: 15px;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 35px;
-            letter-spacing: 0.5px;
-        }
-    
-        &__subtitle {
-            margin-top: 15px;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 23.8px;
-            letter-spacing: 0.34px;
-        }
-    }
-
-    // ----------------------------------------------------- team 576 - done
-
-    .team {
-        margin-top: 55px;
-    
-        &__wrap {
-            //height: 623px;
-        }
-    
-        &__header {
-            text-align: center;
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 44px;
-            letter-spacing: 0.8px;
-            margin-bottom: 30px;
-        }
-    
-        &__block {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-    
-        &__block-one {
-            width: 100%;
-        }
-    
-        &__slider {
-        }
-
-        &__wrapper {
-        }
-    
-        &__slide {
-        }
-    
-        &__image {
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    
-        &__block-two {
-            width: 100%;
-            text-align: center;
-            margin-top: 25px;
-        }
-    
-        &__title {
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 35px;
-            letter-spacing: 0.5px;
-            margin-bottom: 28px;
-        }
-    
-        &__subtitle {
-            p {
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 23.8px;
-                letter-spacing: 0.34px;
-            }
-            & > p {
-                margin-bottom: 20px;
-            }
-            margin-bottom: 28px;
-        }
-    
-        &__link {
-            a {
-                color: #6E9C9F;
-                font-size: 17px;
-                font-weight: 500;
-                line-height: 23.8px;
-                letter-spacing: 0.34px;
-            }
         }
     }
     
-    .team__block-one .swiper-pagination {
-        position: inherit; // убрал position:absolute у стиля swiper
-        bottom: 15px;
-        margin: 0px auto 0px; 
-        width: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    
-        &-bullet {
-            border-radius: 0px;
-            width: 26px;
-            height: 4px;
-            background-color: rgba(255, 255, 255, 0.36);
-            opacity: 1; // переназначил opacity у swiper
-    
-            &-active {
-                background-color: #ffffff;
-            }
-        }
-    }
-    
-    // Remove 'margin-left/right: 4px' 
-    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin:0 var(--swiper-pagination-bullet-horizontal-gap,0px)
-    }
-    
-    .swiper-button-prev,.swiper-button-next {
-        color: #FFF;
+    .tabs-content-hidden {
+        display: none;
     }
 
     // ----------------------------------------------------- footer 576 - done
@@ -957,4 +620,5 @@
             }
         }
     }
+
 }

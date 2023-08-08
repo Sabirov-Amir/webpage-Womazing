@@ -66,6 +66,43 @@ if (closeMenu) {
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
 
+// Tabs
+
+// Находим наши табы и контент к ним
+const tabsItem = document.querySelectorAll('.main__tabs-item');
+const tabsContent = document.querySelectorAll('.main__tabs-content');
+
+// Перебираем все табы (аргумент item - перебираемый таб) и ... 
+tabsItem.forEach(item => item.addEventListener('click', event => {
+	
+	// Получаем значение кликнутого дата атрибута 
+	const tabsItemTarget = event.target.getAttribute('data-tab'); 
+
+	// При клике мы будем убирать класс 'active' у кого он есть
+	tabsItem.forEach(element => element.classList.remove('tabs-item-active'));
+
+	// При клике мы будем добавлять класс 'hidden' у кого его нет
+	tabsContent.forEach(element => element.classList.add('tabs-content-hidden'));
+
+	// Добавляем на нажатый таб класс 'active' (для css)
+	item.classList.add('tabs-item-active');	
+
+	// Благодаря нажатию на конкретный таб, мы находим связанный с ним контент(по дата атрибуту),
+	// который требуется открыть, и убираем у него класс 'hidden'
+	document.getElementById(tabsItemTarget).classList.remove('tabs-content-hidden');
+
+}));
+
+// Таб + контент по умолчанию
+document.querySelector('[data-tab="tab-1"]').classList.add('tabs-item-active');
+document.querySelector('#tab-1').classList.remove('tabs-content-hidden');
+
+/* P.S. Принцип работы кода: Нам нужно понять как связать нажатый нами таб (item) с нужным контентом:
+Мы будем нажимать по какому-то табу, брать у него значение дата атрибута (а оно у нас совпадает с id контента)
+и таким образом находить нужный контент */
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
 // Show which blocks when click 
 // const headerMenuActive = document.querySelector('.header__menu.active');
 // document.addEventListener('click', (e) => {
