@@ -63,6 +63,6 @@ const swiperTeam = new Swiper('.team__slider', {
   effect: 'slider', // 'slider', 'fade', 'flip', 'cube', 'cards',
 
   // First slide, which we see
-  initialSlide: 1,
+  initialSlide: 0,
 
 });

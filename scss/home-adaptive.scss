@@ -578,7 +578,6 @@
         margin-top: 55px;
     
         &__wrap {
-            //height: 623px;
         }
     
         &__header {
@@ -659,15 +658,15 @@
         position: inherit; // убрал position:absolute у стиля swiper
         bottom: 15px;
         margin: 0px auto 0px; 
-        width: 100px;
+        width: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     
         &-bullet {
             border-radius: 0px;
-            width: 26px;
-            height: 4px;
+            width: 22px;
+            height: 3px;
             background-color: rgba(255, 255, 255, 0.36);
             opacity: 1; // переназначил opacity у swiper
     
@@ -683,8 +682,9 @@
         margin:0 var(--swiper-pagination-bullet-horizontal-gap,0px)
     }
     
-    .swiper-button-prev,.swiper-button-next {
+    .swiper-button-prev::after,.swiper-button-next::after {
         color: #FFF;
+        font-size: 22px;
     }
 
     // ----------------------------------------------------- footer 576 - done

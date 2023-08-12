@@ -474,8 +474,9 @@ body.lock {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0px);
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev::after, .swiper-button-next::after {
   color: #FFF;
+  font-size: 30px;
 }
 
 .footer {
